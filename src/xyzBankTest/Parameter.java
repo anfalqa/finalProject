@@ -41,7 +41,7 @@ public class Parameter {
 	public static void deposit_process() throws InterruptedException {
 		Thread.sleep(2000);
 		balanceBeforeDeposit=driver.findElement(By.cssSelector("strong.ng-binding:nth-child(2)")).getText();
-		System.out.println(balanceBeforeDeposit);
+		System.out.println("balance before any process : "+balanceBeforeDeposit);
 		
 		WebElement depo = driver.findElement(By.cssSelector("button.btn-lg:nth-child(2)"));
 		depo.click();
@@ -53,7 +53,7 @@ public class Parameter {
 		WebElement depositButton = driver.findElement(By.cssSelector(".btn.btn-default"));
 		depositButton.click();
 		balanceDuringProcess=driver.findElement(By.cssSelector("strong.ng-binding:nth-child(2)")).getText();
-		System.out.println(balanceDuringProcess);
+		System.out.println("balance after deposit process : "+balanceDuringProcess);
 
 	}// Deposit
 
@@ -68,14 +68,14 @@ public class Parameter {
 		WebElement withdrawButton = driver.findElement(By.cssSelector(".btn.btn-default"));
 		withdrawButton.click();
 		balanceAfterProcess =driver.findElement(By.cssSelector("strong.ng-binding:nth-child(2)")).getText();
-		System.out.println(balanceAfterProcess);
+		System.out.println("balance after withdrawal process : "+balanceAfterProcess);
 
 	}// Withdrawal
 	
 	public static void balance() throws InterruptedException {
 Thread.sleep(1000);
 BalanceAssert=Integer.parseInt(balanceDuringProcess);
-System.out.println(BalanceAssert);
+//System.out.println(BalanceAssert);
 softassert.assertEquals(Integer.parseInt(balanceBeforeDeposit)+randomNumber, BalanceAssert);
 softassert.assertEquals(balanceAfterProcess, balanceBeforeDeposit ,"Error");
 softassert.assertAll();

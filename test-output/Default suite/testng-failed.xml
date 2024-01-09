@@ -7,7 +7,10 @@
         <methods>
           <include name="AssertionPart"/>
           <include name="afterTest"/>
+          <include name="withdrawalProcess"/>
+          <include name="DepositProcess"/>
           <include name="setup"/>
+          <include name="login"/>
         </methods>
       </class> <!-- xyzBankTest.xyzBank -->
     </classes>
