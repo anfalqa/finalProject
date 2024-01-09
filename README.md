@@ -14,9 +14,10 @@ Here some information about the project will see :
 - Deposit Process
 - Withdraw process
 #### test levels and test types
-Test Levels
+###### Test Levels
 - End-to-end (E2E) testing.
-Test Types
+
+###### Test Types
 - Functional Testing.
 
 more information [Here](https://www.canva.com/design/DAF5AywdBII/-QZatgDuQ7NxolgFiyZ8Ag/edit).
