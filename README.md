@@ -20,7 +20,7 @@ Here some information about the project will see :
 ###### Test Types
 - Functional Testing.
 
-more information [Here]([https://www.canva.com/design/DAF5AywdBII/-QZatgDuQ7NxolgFiyZ8Ag/edit](https://drive.google.com/file/d/1ndlge9BurLl3eWOCH1hAMgW5KFSW3vjf/view?usp=sharing)).
+more information [Here](https://drive.google.com/file/d/1ndlge9BurLl3eWOCH1hAMgW5KFSW3vjf/view?usp=sharing).
 
 ## Test Cases
 in this task we test xyz bank in 4 test cases :
